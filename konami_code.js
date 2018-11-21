@@ -15,11 +15,11 @@ let ind = 0
 
 function init() {
   document.body.addEventListener('keydown', (e) => {
-    onKeydown(e)
+    keyDown(e)
   })
 }
 
-function onKeydown(e) {
+function keyDown(e) {
   const key = e.key
   console.log(key)
   if (key === codes[ind]) {
